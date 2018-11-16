@@ -23,3 +23,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/hpo/{hpo_identifier}', 'HpoController@show' );
+Route::get('/testseeder', 'DocumentsController@testseeder' );
